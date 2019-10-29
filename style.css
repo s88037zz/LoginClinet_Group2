@@ -1,0 +1,52 @@
+.el-header, .el-footer{
+    background:#B3C0D1;
+    color:#333;
+    text-align: center;
+    line-height: 30px;
+    
+}
+
+.el-main{
+    background-color:#E9EEF3;
+    color:#333;
+    text-align: center;
+    height: 1000px;
+}
+
+.el-aside{
+    background-color: #D3DCE6;
+    color:#333;
+    text-align: center;
+    height: 1000px;
+}
+
+body > .el-container {
+    margin-bottom: 40px;
+}
+
+.bg-blue{
+    background: rgb(112, 189, 219);
+}
+
+.bg-blue-dark{
+    background: #63e9d7;
+}
+
+.gd-content{
+    border-radius: 4px;
+    min-height: 30px;
+    margin: 20px;
+}
+
+.login-row{
+    padding: 20px;
+    min-height: 50px;
+    text-align: left;
+}
+
+.login-input{
+    display: inline;
+}
+
+
+/* ---------------------------------------*/

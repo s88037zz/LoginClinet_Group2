@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script type="text/javascript" scr="main.js"></script>
+    <link rel=stylesheet type="text/css" href="style.css">
+</head>
+<body>
+    <div id = "login">
+        <el-container>
+            <el-header></el-header>
+            <el-container>
+                <el-aside width="300px"></el-aside>
+                <el-main>
+                <div>
+                    <el-row>
+                        <el-col :span="15">            
+                            <div class="gd-content bg-blue" id="Login">
+                                <h2 style="margin-top:100;">登入</h2>
+                                <div class="login-row">
+                                    <span style="display:inline-block"><p>帳號:</p></span>
+                                    <span style="display:inline-block"><el-input v-model='account' placeholder='請輸入帳號'></el-input></span>                                  
+                                </div>
+                                <div class='login-row'>
+                                    <span style="display:inline-block"><p>密碼:</p></span>
+                                    <span style="display:inline-block"><el-input v-model='password' placeholder='請輸入帳號'></el-input></span>
+                                </div>
+                                <p>帳號:{{account}},密碼:{{password}}</p>
+                                <div class='login-row'>
+                                    <el-button @click="login">登入</el-button>
+                                </div>
+                            </div>
+                        </el-col>
+                        <el-col :span="9"><div class="gd-content bg-blue-dark"></div></el-col>
+                    </el-row>
+                </div>
+                </el-main>
+            </el-container>  
+            <el-footer></el-footer>
+        </el-container>
+    </div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    var account = new Vue({
+        el:'#Login',
+        data:{
+            account:'',
+            password:''
+        },
+        methods:{
+            login:function(event){
+               
+            }
+        }
+    })
+</script>
+</html>
